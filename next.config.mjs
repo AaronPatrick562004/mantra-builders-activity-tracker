@@ -6,10 +6,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Correct key for Next.js 16
-  experimental: {
-    turbopack: false,
-  },
 }
 
 export default nextConfig
