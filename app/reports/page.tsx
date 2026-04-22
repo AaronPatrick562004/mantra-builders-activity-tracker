@@ -69,7 +69,7 @@ export default function ReportsPage() {
         </div>
 
         {/* Portfolio Overview */}
-        <Card className="mb-5 border-blue-900/20 bg-blue-900/5">
+        <Card className="mb-5 border-blue-900/20">
           <CardContent className="p-4 sm:p-5">
             <div className="flex items-center gap-3 mb-3">
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-900">
@@ -99,7 +99,7 @@ export default function ReportsPage() {
 
         {/* Summary Cards */}
         <div className="mb-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
-          <Card className="border-blue-900/20 bg-blue-900/5">
+          <Card className="border-blue-900/20">
             <CardContent className="pt-4">
               <div className="flex items-center gap-2">
                 <TrendingUp className="h-4 w-4 text-blue-900" />
@@ -198,7 +198,7 @@ export default function ReportsPage() {
         </Card>
 
         {/* Impact Summary */}
-        <Card className="border-blue-900/20 bg-blue-900/5">
+        <Card className="border-blue-900/20">
           <CardContent className="py-5 sm:py-6">
             <div className="mx-auto max-w-2xl text-center">
               <h3 className="font-mono text-lg font-bold text-gray-900 sm:text-xl">
