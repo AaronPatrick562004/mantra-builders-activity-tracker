@@ -45,7 +45,7 @@ export function HeroSection() {
 
           {/* Buttons */}
           <div className="mt-8 flex flex-wrap gap-3">
-            <Button size="lg" className="gap-2 bg-white text-blue-900 hover:bg-gray-100 shadow-lg" asChild>
+            <Button size="lg" className="gap-2 bg-white text-green-700 hover:bg-gray-100 shadow-lg" asChild>
               <Link href="/mantra-dashboard">
                 Project Dashboard
                 <ArrowRight className="h-4 w-4" />

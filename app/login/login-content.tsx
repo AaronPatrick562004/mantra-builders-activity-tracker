@@ -78,12 +78,12 @@ export default function LoginContent() {
                     onClick={() => setUserType("project")}
                     className={`flex flex-col items-center gap-2 rounded-lg border p-3 transition-all ${
                       userType === "project"
-                       ? "border-blue-900 bg-blue-50 ring-2 ring-blue-900/20"
+                       ? "border-green-600 bg-green-50 ring-2 ring-green-600/20"
                         : "border-gray-200 hover:border-gray-300"
                     }`}
                   >
-                    <Building2 className={`h-5 w-5 ${userType === "project"? "text-blue-900" : "text-gray-500"}`} />
-                    <span className={`text-sm font-medium ${userType === "project"? "text-blue-900" : "text-gray-700"}`}>
+                    <Building2 className={`h-5 w-5 ${userType === "project"? "text-green-600" : "text-gray-500"}`} />
+                    <span className={`text-sm font-medium ${userType === "project"? "text-green-600" : "text-gray-700"}`}>
                       Project
                     </span>
                     <span className="text-xs text-gray-500">Project Dashboard</span>
@@ -93,12 +93,12 @@ export default function LoginContent() {
                     onClick={() => setUserType("officer")}
                     className={`flex flex-col items-center gap-2 rounded-lg border p-3 transition-all ${
                       userType === "officer"
-                       ? "border-blue-900 bg-blue-50 ring-2 ring-blue-900/20"
+                       ? "border-green-600 bg-green-50 ring-2 ring-green-600/20"
                         : "border-gray-200 hover:border-gray-300"
                     }`}
                   >
-                    <Shield className={`h-5 w-5 ${userType === "officer"? "text-blue-900" : "text-gray-500"}`} />
-                    <span className={`text-sm font-medium ${userType === "officer"? "text-blue-900" : "text-gray-700"}`}>
+                    <Shield className={`h-5 w-5 ${userType === "officer"? "text-green-600" : "text-gray-500"}`} />
+                    <span className={`text-sm font-medium ${userType === "officer"? "text-green-600" : "text-gray-700"}`}>
                       Officer
                     </span>
                     <span className="text-xs text-gray-500">Admin Dashboard</span>
@@ -135,7 +135,7 @@ export default function LoginContent() {
               </div>
 
               {/* Demo Info */}
-              <div className="rounded-lg bg-blue-50 p-3 text-xs text-blue-800">
+              <div className="rounded-lg bg-green-50 p-3 text-xs text-green-800">
                 <p className="font-medium mb-1">Demo Credentials:</p>
                 <p>Any email & password works for testing</p>
               </div>
@@ -143,7 +143,7 @@ export default function LoginContent() {
               {/* Submit Button */}
               <Button
                 type="submit"
-                className="w-full bg-blue-900 hover:bg-blue-950 h-10"
+                className="w-full bg-green-600 hover:bg-green-700 h-10"
                 disabled={isLoading}
               >
                 {isLoading? (
@@ -167,7 +167,7 @@ export default function LoginContent() {
                 <Button
                   variant="outline"
                   size="sm"
-                  className="flex-1 text-blue-900 border-blue-200 hover:bg-blue-50"
+                  className="flex-1 text-green-600 border-green-200 hover:bg-green-50"
                   onClick={() => router.push("/mantra-dashboard")}
                 >
                   Project Demo
@@ -175,7 +175,7 @@ export default function LoginContent() {
                 <Button
                   variant="outline"
                   size="sm"
-                  className="flex-1 text-blue-900 border-blue-200 hover:bg-blue-50"
+                  className="flex-1 text-green-600 border-green-200 hover:bg-green-50"
                   onClick={() => router.push("/admin")}
                 >
                   Officer Demo

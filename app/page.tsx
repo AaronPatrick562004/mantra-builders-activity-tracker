@@ -20,7 +20,7 @@ export default function HomePage() {
           <div className="mx-auto max-w-7xl px-4 lg:px-8">
             <div className="grid items-center gap-12 lg:grid-cols-2">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-blue-900">
+                <p className="text-sm font-semibold uppercase tracking-wider text-green-600">
                   Platform Preview
                 </p>
                 <h2 className="mt-2 text-balance font-mono text-3xl font-bold text-foreground">
@@ -52,13 +52,13 @@ export default function HomePage() {
                     <Link
                       key={role.title}
                       href={role.href}
-                      className="group flex items-start gap-4 rounded-lg border border-border bg-card p-4 transition-colors hover:border-blue-900/30"
+                      className="group flex items-start gap-4 rounded-lg border border-border bg-card p-4 transition-colors hover:border-green-600/30"
                     >
                       <div className="flex-1">
                         <h4 className="font-semibold text-foreground">{role.title}</h4>
                         <p className="mt-1 text-sm text-muted-foreground">{role.desc}</p>
                       </div>
-                      <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-blue-900" />
+                      <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-green-600" />
                     </Link>
                   ))}
                 </div>
@@ -78,7 +78,7 @@ export default function HomePage() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-linear-to-r from-blue-900 to-blue-700 py-16 lg:py-20">
+        <section className="bg-linear-to-r from-green-700 to-green-600 py-16 lg:py-20">
           <div className="mx-auto max-w-7xl px-4 text-center lg:px-8">
             <h2 className="text-balance font-mono text-3xl font-bold text-white lg:text-4xl">
               Ready to Transform Your Community?
@@ -91,7 +91,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 variant="secondary"
-                className="gap-2 bg-white text-blue-900 hover:bg-gray-100"
+                className="gap-2 bg-white text-green-700 hover:bg-gray-100"
                 asChild
               >
                 <Link href="/mantra-dashboard">

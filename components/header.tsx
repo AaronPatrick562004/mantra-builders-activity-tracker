@@ -43,7 +43,7 @@ export function Header() {
               <Building2 className="h-8 w-8 md:h-10 md:w-10 text-gray-600" />
             )}
             <div className="flex flex-col">
-              <span className="font-mono text-sm md:text-base font-bold leading-tight text-gray-900 group-hover:text-blue-900 transition-colors">
+              <span className="font-mono text-sm md:text-base font-bold leading-tight text-gray-900 group-hover:text-green-700 transition-colors">
                 Mantra Builders Activity Tracker
               </span>
               <span className="text-xs leading-tight text-gray-500">
@@ -56,25 +56,25 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-1">
             <Link
               href="/"
-              className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 hover:text-blue-900"
+              className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 hover:text-green-700"
             >
               Home
             </Link>
             <Link
               href="/mantra-dashboard"
-              className="rounded-md px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-blue-900"
+              className="rounded-md px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-green-700"
             >
               Dashboard
             </Link>
             <Link
               href="/admin"
-              className="rounded-md px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-blue-900"
+              className="rounded-md px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-green-700"
             >
               Admin
             </Link>
             <Link
               href="/reports"
-              className="rounded-md px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-blue-900"
+              className="rounded-md px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-green-700"
             >
               Reports
             </Link>
@@ -82,10 +82,15 @@ export function Header() {
 
           {/* Desktop Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="outline" size="sm" asChild>
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="bg-white text-gray-700 border-gray-300 hover:bg-white hover:text-gray-700 hover:border-gray-400"
+              asChild
+            >
               <Link href="/login?type=resident">Project Login</Link>
             </Button>
-            <Button size="sm" className="bg-linear-to-r from-blue-900 to-blue-800 hover:from-blue-950 hover:to-blue-900" asChild>
+            <Button size="sm" className="bg-linear-to-r from-green-700 to-green-600 hover:from-green-800 hover:to-green-700" asChild>
               <Link href="/login?type=officer">Officer Login</Link>
             </Button>
           </div>
@@ -109,28 +114,28 @@ export function Header() {
               <nav className="flex flex-col gap-1">
                 <Link
                   href="/"
-                  className="rounded-lg px-4 py-3 text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition-colors"
+                  className="rounded-lg px-4 py-3 text-base font-medium text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
                   Home
                 </Link>
                 <Link
                   href="/mantra-dashboard"
-                  className="rounded-lg px-4 py-3 text-base font-medium text-gray-600 hover:bg-blue-50 hover:text-blue-900 transition-colors"
+                  className="rounded-lg px-4 py-3 text-base font-medium text-gray-600 hover:bg-green-50 hover:text-green-700 transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
                   Dashboard
                 </Link>
                 <Link
                   href="/admin"
-                  className="rounded-lg px-4 py-3 text-base font-medium text-gray-600 hover:bg-blue-50 hover:text-blue-900 transition-colors"
+                  className="rounded-lg px-4 py-3 text-base font-medium text-gray-600 hover:bg-green-50 hover:text-green-700 transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
                   Admin
                 </Link>
                 <Link
                   href="/reports"
-                  className="rounded-lg px-4 py-3 text-base font-medium text-gray-600 hover:bg-blue-50 hover:text-blue-900 transition-colors"
+                  className="rounded-lg px-4 py-3 text-base font-medium text-gray-600 hover:bg-green-50 hover:text-green-700 transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
                   Reports
@@ -140,7 +145,7 @@ export function Header() {
               <div className="mt-3 flex flex-col gap-2">
                 <Button
                   variant="outline"
-                  className="w-full"
+                  className="w-full bg-white text-gray-700 border-gray-300 hover:bg-white hover:text-gray-700 hover:border-gray-400"
                   asChild
                 >
                   <Link href="/login?type=resident" onClick={() => setMenuOpen(false)}>
@@ -148,7 +153,7 @@ export function Header() {
                   </Link>
                 </Button>
                 <Button
-                  className="w-full bg-linear-to-r from-blue-900 to-blue-800 hover:from-blue-950 hover:to-blue-900"
+                  className="w-full bg-linear-to-r from-green-700 to-green-600 hover:from-green-800 hover:to-green-700"
                   asChild
                 >
                   <Link href="/login?type=officer" onClick={() => setMenuOpen(false)}>

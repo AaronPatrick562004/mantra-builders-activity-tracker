@@ -12,48 +12,48 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
-// Translations with Brigade branding
+// Translations with Mantra Builders branding
 const translations: Record<Language, Record<string, string>> = {
   en: {
     // Header
-    ecoClub: 'Brigade Eco-Club',
+    ecoClub: 'Mantra Eco-Club',
     home: 'Home',
     dashboard: 'Dashboard',
     admin: 'Admin',
     reports: 'Reports',
-    
+
     // Hero Section
-    'hero.badge': 'Brigade Group | Sustainable Living Initiative',
-    'hero.title': 'Brigade Eco-Club Activity Tracker',
-    'hero.subtitle': 'A comprehensive digital platform for Brigade Group to monitor, track, and celebrate Eco-Club activities across all residential communities.',
+    'hero.badge': 'Mantra Builders | Sustainable Living Initiative',
+    'hero.title': 'Mantra Eco-Club Activity Tracker',
+    'hero.subtitle': 'A comprehensive digital platform for Mantra Builders to monitor, track, and celebrate Eco-Club activities across all residential communities.',
     'hero.btn1': 'Project Dashboard',
     'hero.btn2': 'Admin Monitor',
-    
+
     // Stats
     'stats.projects': 'Projects Registered',
     'stats.active': 'Active Eco-Clubs',
     'stats.activities': 'Activities This Month',
     'stats.residents': 'Residents Engaged',
-    
+
     // Proposal Section
-    'proposal.badge': 'Brigade Sustainability Framework',
+    'proposal.badge': 'Mantra Sustainability Framework',
     'proposal.title': 'Digital Tracking Framework for Eco-Clubs',
-    'proposal.description': 'A unified digital system to track implementation of Eco-Club activities across all residential communities under Brigade Group.',
-    'proposal.initiative': 'Brigade Group Initiative',
-    'proposal.initiativeText': 'Promoting sustainable living and environmental consciousness among residents across all Brigade communities.',
-    
+    'proposal.description': 'A unified digital system to track implementation of Eco-Club activities across all residential communities under Mantra Builders.',
+    'proposal.initiative': 'Mantra Builders Initiative',
+    'proposal.initiativeText': 'Promoting sustainable living and environmental consciousness among residents across all Mantra communities.',
+
     // Objectives
     'obj.title': 'Eco-Club Objectives',
     'obj1': 'Develop environmental awareness among residents',
     'obj2': 'Promote sustainable habits and responsible behaviour',
     'obj3': 'Encourage participation in conservation activities',
     'obj4': 'Connect residents with nature and local environment',
-    'obj5': 'Support Brigade\'s sustainability goals',
-    
+    'obj5': 'Support Mantra\'s sustainability goals',
+
     // Activities
     'activities.title': 'Recommended Activities to Track',
     'activities.subtitle': 'Each residential community is encouraged to conduct at least one activity per month',
-    
+
     // Tracking System
     'tracking.title': 'Proposed Tracking System',
     'tracking1.title': 'Digital Activity Logging',
@@ -64,7 +64,7 @@ const translations: Record<Language, Record<string, string>> = {
     'tracking3.desc': 'Community Managers, Zonal Heads, and Regional Directors each have tailored dashboards for their jurisdiction level.',
     'tracking4.title': 'Recognition & Ranking',
     'tracking4.desc': 'Automatic scoring and ranking of eco-clubs based on activity frequency, resident participation, and diversity of activities conducted.',
-    
+
     // Implementation Plan
     'plan.title': 'Implementation Plan',
     'plan.phase1': 'Project Registration & Eco-Club Formation',
@@ -75,7 +75,7 @@ const translations: Record<Language, Record<string, string>> = {
     'plan.phase3.items': 'Zonal-level manager dashboards for monitoring|Regional-level aggregated reports|Corporate-level analytics and trends|Periodic performance assessment',
     'plan.phase4': 'Recognition & Scaling',
     'plan.phase4.items': 'Best performing eco-club identification|Awards and recognition at regional/corporate level|Community involvement metrics|Annual impact assessment report',
-    
+
     // Platform Preview
     'preview.badge': 'Platform Preview',
     'preview.title': 'Built for Every Stakeholder',
@@ -86,37 +86,37 @@ const translations: Record<Language, Record<string, string>> = {
     'preview.manager.desc': 'Monitor eco-club implementation, view regional analytics, and identify underperforming communities.',
     'preview.leadership': 'Corporate Leadership',
     'preview.leadership.desc': 'Access cross-community analytics, generate reports, and recognize best-performing eco-clubs.',
-    
+
     // CTA Section
     'cta.title': 'Ready to Transform Your Community?',
-    'cta.description': 'Join Brigade Group\'s initiative to create sustainable, eco-friendly residential communities. Track activities, engage residents, and make a real impact on the environment.',
-    'cta.btn1': 'View Brigade Dashboard',
+    'cta.description': 'Join Mantra Builders\' initiative to create sustainable, eco-friendly residential communities. Track activities, engage residents, and make a real impact on the environment.',
+    'cta.btn1': 'View Mantra Dashboard',
     'cta.btn2': 'Download Implementation Guide',
-    
+
     // Footer
-    'footer.initiative': 'A Brigade Group initiative under Sustainable Living to track and promote environmental activities in residential communities.',
+    'footer.initiative': 'A Mantra Builders initiative under Sustainable Living to track and promote environmental activities in residential communities.',
     'footer.platform': 'Platform',
     'footer.project': 'Project Dashboard',
     'footer.admin': 'Admin Monitor',
     'footer.reports': 'Reports & Analytics',
     'footer.resources': 'Resources',
     'footer.guidelines': 'Activity Guidelines',
-    'footer.portal': 'Brigade Sustainability Portal',
+    'footer.portal': 'Mantra Sustainability Portal',
     'footer.contact': 'Contact',
-    'footer.address1': 'Brigade Group - Sustainability Wing',
-    'footer.address2': 'World Trade Center, Bengaluru 560 055',
-    'footer.address3': 'Karnataka, India',
-    'footer.copyright': 'Brigade Group - Sustainability Initiative. Supporting sustainable communities.',
+    'footer.address1': 'Mantra Builders - Sustainability Wing',
+    'footer.address2': '3rd Floor, Bund Garden Rd, next to INOX Bund Garden',
+    'footer.address3': 'Pune, Camp, Pune, Maharashtra 411001',
+    'footer.copyright': 'Mantra Builders - Sustainability Initiative. Supporting sustainable communities.',
   },
   mr: {
-    ecoClub: 'ब्रिगेड इको-क्लब',
+    ecoClub: 'मंत्रा इको-क्लब',
     home: 'मुख्यपृष्ठ',
     dashboard: 'डॅशबोर्ड',
     admin: 'प्रशासन',
     reports: 'अहवाल',
   },
   hi: {
-    ecoClub: 'ब्रिगेड इको-क्लब',
+    ecoClub: 'मंत्रा इको-क्लब',
     home: 'होम',
     dashboard: 'डैशबोर्ड',
     admin: 'एडमिन',

@@ -37,7 +37,7 @@ export default function AdminPage() {
         {/* Page Header */}
         <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-900">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-green-600">
               <Shield className="h-6 w-6 text-white" />
             </div>
             <div>
@@ -53,11 +53,11 @@ export default function AdminPage() {
 
         {/* Portfolio Status Overview */}
         <div className="mb-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
-          <Card className="border-blue-900/20 bg-blue-900/5">
+          <Card className="border-green-600/20 bg-green-600/5">
             <CardContent className="pt-6">
               <div className="flex items-center gap-2">
-                <Building2 className="h-4 w-4 text-blue-900" />
-                <span className="text-xs font-medium text-blue-900">Total Portfolio</span>
+                <Building2 className="h-4 w-4 text-green-600" />
+                <span className="text-xs font-medium text-green-600">Total Portfolio</span>
               </div>
               <p className="mt-1 font-mono text-3xl font-bold text-gray-900">{stats.totalProjects}</p>
               <p className="mt-1 text-xs text-gray-500">{stats.completedProjects} completed, {stats.ongoingProjects} ongoing</p>
@@ -91,7 +91,7 @@ export default function AdminPage() {
           <Card>
             <CardContent className="pt-6">
               <div className="flex items-center gap-2 text-gray-500">
-                <TrendingUp className="h-4 w-4 text-blue-900" />
+                <TrendingUp className="h-4 w-4 text-green-600" />
                 <span className="text-xs">This Month</span>
               </div>
               <p className="mt-1 font-mono text-3xl font-bold text-gray-900">{stats.totalActivities}</p>
@@ -173,7 +173,7 @@ export default function AdminPage() {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg">
-              <Clock className="h-5 w-5 text-blue-900" />
+              <Clock className="h-5 w-5 text-green-600" />
               Recent Eco-Club Activities
             </CardTitle>
           </CardHeader>

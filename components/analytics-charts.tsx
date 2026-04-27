@@ -17,15 +17,15 @@ import {
 } from "recharts"
 import { mantraMonthlyProgress, mantraDistrictStats } from "@/lib/mantra-eco-club-data"
 
-// Blue color palette
-const BLUE_COLORS = {
-  primary: "#1e3a8a",
-  secondary: "#3b82f6",
-  light: "#93c5fd",
-  lighter: "#dbeafe",
+// Green color palette
+const GREEN_COLORS = {
+  primary: "#166534",  // green-800
+  secondary: "#16a34a", // green-600
+  light: "#86efac",    // green-300
+  lighter: "#dcfce7",  // green-100
 }
 
-const PIE_COLORS = ["#1e3a8a", "#2563eb", "#3b82f6", "#60a5fa", "#93c5fd"]
+const PIE_COLORS = ["#166534", "#16a34a", "#22c55e", "#4ade80", "#86efac"]
 
 export function MonthlyProgressChart() {
   return (
@@ -46,7 +46,7 @@ export function MonthlyProgressChart() {
                 borderRadius: '8px'
               }}
             />
-            <Bar dataKey="activities" fill={BLUE_COLORS.primary} radius={[8, 8, 0, 0]} />
+            <Bar dataKey="activities" fill={GREEN_COLORS.primary} radius={[8, 8, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </CardContent>
@@ -76,10 +76,10 @@ export function DistrictComparisonChart() {
             <Line
               type="monotone"
               dataKey="residentParticipation"
-              stroke={BLUE_COLORS.primary}
+              stroke={GREEN_COLORS.primary}
               strokeWidth={3}
-              dot={{ fill: BLUE_COLORS.primary, r: 4 }}
-              activeDot={{ r: 6, fill: BLUE_COLORS.secondary }}
+              dot={{ fill: GREEN_COLORS.primary, r: 4 }}
+              activeDot={{ r: 6, fill: GREEN_COLORS.secondary }}
             />
           </LineChart>
         </ResponsiveContainer>
@@ -145,7 +145,7 @@ export function ResidentParticipationChart() {
                 borderRadius: '8px'
               }}
             />
-            <Bar dataKey="activeEcoClubs" fill={BLUE_COLORS.secondary} radius={[0, 8, 8, 0]} />
+            <Bar dataKey="activeEcoClubs" fill={GREEN_COLORS.secondary} radius={[0, 8, 8, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </CardContent>

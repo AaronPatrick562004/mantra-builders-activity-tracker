@@ -19,16 +19,16 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 const activities = [
-  { icon: TreePine, label: "Tree Plantation & Nurturing", color: "text-blue-700" },
-  { icon: Recycle, label: "Waste Segregation & Recycling", color: "text-blue-700" },
-  { icon: Ban, label: "Plastic-Free Community", color: "text-blue-700" },
-  { icon: Droplets, label: "Water Conservation", color: "text-blue-700" },
-  { icon: Zap, label: "Energy Saving Practices", color: "text-blue-700" },
-  { icon: Sparkles, label: "Cleanliness Drives", color: "text-blue-700" },
-  { icon: Bug, label: "Biodiversity Awareness", color: "text-blue-700" },
-  { icon: Footprints, label: "Nature Walks / Eco-Trails", color: "text-blue-700" },
-  { icon: Calendar, label: "Environmental Day Celebrations", color: "text-blue-700" },
-  { icon: Flower2, label: "Composting / Kitchen Garden", color: "text-blue-700" },
+  { icon: TreePine, label: "Tree Plantation & Nurturing", color: "text-green-700" },
+  { icon: Recycle, label: "Waste Segregation & Recycling", color: "text-green-700" },
+  { icon: Ban, label: "Plastic-Free Community", color: "text-green-700" },
+  { icon: Droplets, label: "Water Conservation", color: "text-green-700" },
+  { icon: Zap, label: "Energy Saving Practices", color: "text-green-700" },
+  { icon: Sparkles, label: "Cleanliness Drives", color: "text-green-700" },
+  { icon: Bug, label: "Biodiversity Awareness", color: "text-green-700" },
+  { icon: Footprints, label: "Nature Walks / Eco-Trails", color: "text-green-700" },
+  { icon: Calendar, label: "Environmental Day Celebrations", color: "text-green-700" },
+  { icon: Flower2, label: "Composting / Kitchen Garden", color: "text-green-700" },
 ]
 
 const trackingFeatures = [
@@ -64,7 +64,7 @@ export function ProposalSection() {
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-wider text-blue-900">
+          <p className="text-sm font-semibold uppercase tracking-wider text-green-700">
             Mantra Builders Sustainability Framework
           </p>
           <h2 className="mt-2 text-balance font-mono text-3xl font-bold text-foreground lg:text-4xl">
@@ -77,9 +77,9 @@ export function ProposalSection() {
         </div>
 
         {/* Mantra Initiative Note */}
-        <div className="mt-8 rounded-lg bg-blue-50 p-4 text-center border border-blue-200">
-          <Building2 className="mx-auto mb-2 h-6 w-6 text-blue-900" />
-          <p className="text-sm text-blue-900">
+        <div className="mt-8 rounded-lg bg-green-50 p-4 text-center border border-green-200">
+          <Building2 className="mx-auto mb-2 h-6 w-6 text-green-700" />
+          <p className="text-sm text-green-700">
             <span className="font-semibold">Mantra Builders Initiative:</span> Promoting sustainable living
             and environmental consciousness among residents across all Mantra Builders communities.
           </p>
@@ -102,7 +102,7 @@ export function ProposalSection() {
                 key={index}
                 className="flex items-start gap-3 rounded-lg border border-border bg-card p-4"
               >
-                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-900 text-sm font-bold text-white">
+                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-green-700 text-sm font-bold text-white">
                   {index + 1}
                 </div>
                 <p className="text-sm leading-relaxed text-foreground">{objective}</p>
@@ -123,7 +123,7 @@ export function ProposalSection() {
             {activities.map((activity) => (
               <div
                 key={activity.label}
-                className="flex flex-col items-center gap-2 rounded-lg border border-border bg-card p-4 text-center transition-colors hover:border-blue-900/30 hover:bg-blue-50"
+                className="flex flex-col items-center gap-2 rounded-lg border border-border bg-card p-4 text-center transition-colors hover:border-green-700/30 hover:bg-green-50"
               >
                 <activity.icon className={`h-8 w-8 ${activity.color}`} />
                 <span className="text-xs font-medium leading-tight text-foreground">
@@ -144,8 +144,8 @@ export function ProposalSection() {
               <Card key={feature.title} className="border-border hover:shadow-md transition-shadow">
                 <CardHeader className="pb-3">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100">
-                      <feature.icon className="h-5 w-5 text-blue-900" />
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-100">
+                      <feature.icon className="h-5 w-5 text-green-700" />
                     </div>
                     <CardTitle className="text-base font-semibold">
                       {feature.title}
@@ -212,21 +212,21 @@ export function ProposalSection() {
             ].map((phase, index) => (
               <div key={phase.phase} className="relative flex gap-4 pb-8 last:pb-0">
                 {index < 3 && (
-                  <div className="absolute left-4.75 top-10 h-[calc(100%-16px)] w-px bg-blue-200" />
+                  <div className="absolute left-4.75 top-10 h-[calc(100%-16px)] w-px bg-green-200" />
                 )}
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-900 text-xs font-bold text-white">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-700 text-xs font-bold text-white">
                   {phase.phase.split(" ")[1]}
                 </div>
                 <div className="flex-1">
                   <div className="rounded-lg border border-border bg-card p-4 hover:shadow-md transition-shadow">
-                    <p className="text-xs font-semibold uppercase tracking-wider text-blue-900">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-green-700">
                       {phase.phase}
                     </p>
                     <h4 className="mt-1 font-semibold text-foreground">{phase.title}</h4>
                     <ul className="mt-3 flex flex-col gap-1.5">
                       {phase.items.map((item) => (
                         <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
-                          <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-700" />
+                          <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-green-700" />
                           {item}
                         </li>
                       ))}
@@ -239,10 +239,10 @@ export function ProposalSection() {
         </div>
 
         {/* Mantra Eco-Club Highlight */}
-        <div className="mt-16 rounded-xl bg-linear-to-r from-blue-900 to-blue-700 p-8 text-center text-white">
+        <div className="mt-16 rounded-xl bg-linear-to-r from-green-700 to-green-600 p-8 text-center text-white">
           <Users className="mx-auto mb-3 h-10 w-10" />
           <h3 className="text-2xl font-bold">Join the Mantra Builders Eco-Club Movement</h3>
-          <p className="mx-auto mt-2 max-w-2xl text-blue-100">
+          <p className="mx-auto mt-2 max-w-2xl text-green-100">
             Be part of a growing community of environmentally conscious residents making a difference
             in their neighborhoods. Together, we can create sustainable communities for future generations.
           </p>

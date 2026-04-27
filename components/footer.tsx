@@ -35,7 +35,7 @@ export function Footer() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-100 sm:h-12 sm:w-12">
                     <Building2 className="h-5 w-5 text-gray-600 sm:h-6 sm:w-6" />
                   </div>
-                  <span className="font-mono text-sm font-bold text-gray-900 group-hover:text-blue-900 transition-colors sm:text-base">
+                  <span className="font-mono text-sm font-bold text-gray-900 group-hover:text-green-700 transition-colors sm:text-base">
                     Mantra Builders
                   </span>
                 </div>
@@ -48,17 +48,17 @@ export function Footer() {
 
             <div className="mt-3 space-y-2">
               <div className="flex items-start gap-2">
-                <MapPin className="h-4 w-4 text-blue-900 mt-0.5 shrink-0" />
+                <MapPin className="h-4 w-4 text-green-700 mt-0.5 shrink-0" />
                 <p className="max-w-xs text-xs leading-relaxed text-gray-600 sm:text-sm">
                   3rd Floor, Bund Garden Rd, next to INOX Bund Garden<br />
                   Pune, Camp, Pune, Maharashtra 411001
                 </p>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-blue-900 shrink-0" />
+                <Mail className="h-4 w-4 text-green-700 shrink-0" />
                 <a
                   href="mailto:sustainability@mantrabuilders.com"
-                  className="text-xs text-gray-600 hover:text-blue-900 transition sm:text-sm"
+                  className="text-xs text-gray-600 hover:text-green-700 transition sm:text-sm"
                 >
                   sustainability@mantrabuilders.com
                 </a>
@@ -73,7 +73,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/mantra-dashboard"
-                  className="text-xs text-gray-600 hover:text-blue-900 transition sm:text-sm"
+                  className="text-xs text-gray-600 hover:text-green-700 transition sm:text-sm"
                 >
                   Dashboard
                 </Link>
@@ -81,7 +81,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/admin"
-                  className="text-xs text-gray-600 hover:text-blue-900 transition sm:text-sm"
+                  className="text-xs text-gray-600 hover:text-green-700 transition sm:text-sm"
                 >
                   Admin
                 </Link>
@@ -89,7 +89,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/reports"
-                  className="text-xs text-gray-600 hover:text-blue-900 transition sm:text-sm"
+                  className="text-xs text-gray-600 hover:text-green-700 transition sm:text-sm"
                 >
                   Reports
                 </Link>
@@ -104,7 +104,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/login"
-                  className="text-xs text-gray-600 hover:text-blue-900 transition sm:text-sm"
+                  className="text-xs text-gray-600 hover:text-green-700 transition sm:text-sm"
                 >
                   Login
                 </Link>

@@ -30,18 +30,18 @@ export default function ReportsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      <main className="mx-auto max-w-7xl px-4 py-8 lg:px-8">
+      <main className="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-6 lg:px-8">
         {/* Page Header */}
-        <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
+        <div className="mb-5 flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-900">
-              <BarChart3 className="h-6 w-6 text-white" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-green-600">
+              <BarChart3 className="h-5 w-5 text-white" />
             </div>
             <div>
-              <h1 className="font-mono text-2xl font-bold text-gray-900">
+              <h1 className="font-mono text-xl font-bold text-gray-900 sm:text-2xl">
                 Reports
               </h1>
-              <p className="text-sm text-gray-600">
+              <p className="text-xs text-gray-600 sm:text-sm">
                 Mantra Properties | 17 years | 12 completed + 18 ongoing projects
               </p>
             </div>
@@ -69,53 +69,53 @@ export default function ReportsPage() {
         </div>
 
         {/* Portfolio Overview */}
-        <Card className="mb-8 border-blue-900/20 bg-blue-900/5">
-          <CardContent className="p-6">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-900">
-                <Building2 className="h-5 w-5 text-white" />
+        <Card className="mb-5 border-green-600/20">
+          <CardContent className="p-4 sm:p-5">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-green-600">
+                <Building2 className="h-4 w-4 text-white" />
               </div>
               <div>
-                <h3 className="font-mono text-lg font-bold text-gray-900">Mantra Properties Portfolio</h3>
+                <h3 className="font-mono text-base font-bold text-gray-900 sm:text-lg">Mantra Properties Portfolio</h3>
                 <p className="text-xs text-gray-600">Distinguished real estate developer in Pune</p>
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-4 text-center">
+            <div className="grid grid-cols-3 gap-3 text-center">
               <div>
-                <p className="font-mono text-2xl sm:text-3xl font-bold text-blue-900">{stats.completedProjects}</p>
-                <p className="text-xs text-gray-600 mt-1">Successful Projects</p>
+                <p className="font-mono text-xl font-bold text-green-600 sm:text-2xl">{stats.completedProjects}</p>
+                <p className="text-xs text-gray-600 mt-0.5">Successful Projects</p>
               </div>
               <div>
-                <p className="font-mono text-2xl sm:text-3xl font-bold text-blue-900">{stats.ongoingProjects}</p>
-                <p className="text-xs text-gray-600 mt-1">Ongoing Developments</p>
+                <p className="font-mono text-xl font-bold text-green-600 sm:text-2xl">{stats.ongoingProjects}</p>
+                <p className="text-xs text-gray-600 mt-0.5">Ongoing Developments</p>
               </div>
               <div>
-                <p className="font-mono text-2xl sm:text-3xl font-bold text-blue-900">{stats.legacyYears}</p>
-                <p className="text-xs text-gray-600 mt-1">Years Legacy</p>
+                <p className="font-mono text-xl font-bold text-green-600 sm:text-2xl">{stats.legacyYears}</p>
+                <p className="text-xs text-gray-600 mt-0.5">Years Legacy</p>
               </div>
             </div>
           </CardContent>
         </Card>
 
         {/* Summary Cards */}
-        <div className="mb-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
-          <Card className="border-blue-900/20 bg-blue-900/5">
-            <CardContent className="pt-6">
+        <div className="mb-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
+          <Card className="border-green-600/20">
+            <CardContent className="pt-4">
               <div className="flex items-center gap-2">
-                <TrendingUp className="h-4 w-4 text-blue-900" />
-                <span className="text-xs font-medium text-blue-900">Growth Rate</span>
+                <TrendingUp className="h-4 w-4 text-green-600" />
+                <span className="text-xs font-medium text-green-600">Growth Rate</span>
               </div>
-              <p className="mt-1 font-mono text-3xl font-bold text-gray-900">+18%</p>
+              <p className="mt-1 font-mono text-2xl font-bold text-gray-900 sm:text-3xl">+18%</p>
               <p className="mt-1 text-xs text-gray-500">Eco-club adoption this quarter</p>
             </CardContent>
           </Card>
 
           <Card>
-            <CardContent className="pt-6">
+            <CardContent className="pt-4">
               <div className="flex items-center gap-2 text-gray-500">
                 <span className="text-xs">Avg Activities/Project</span>
               </div>
-              <p className="mt-1 font-mono text-3xl font-bold text-gray-900">
+              <p className="mt-1 font-mono text-2xl font-bold text-gray-900 sm:text-3xl">
                 {(stats.totalActivities / stats.activeClubs * 12).toFixed(1)}
               </p>
               <p className="mt-1 text-xs text-gray-500">Per year projection</p>
@@ -123,11 +123,11 @@ export default function ReportsPage() {
           </Card>
 
           <Card>
-            <CardContent className="pt-6">
+            <CardContent className="pt-4">
               <div className="flex items-center gap-2 text-gray-500">
                 <span className="text-xs">Avg Residents/Activity</span>
               </div>
-              <p className="mt-1 font-mono text-3xl font-bold text-gray-900">
+              <p className="mt-1 font-mono text-2xl font-bold text-gray-900 sm:text-3xl">
                 {Math.round(stats.totalParticipation / stats.totalActivities)}
               </p>
               <p className="mt-1 text-xs text-gray-500">Across all districts</p>
@@ -135,11 +135,11 @@ export default function ReportsPage() {
           </Card>
 
           <Card>
-            <CardContent className="pt-6">
+            <CardContent className="pt-4">
               <div className="flex items-center gap-2 text-gray-500">
                 <span className="text-xs">Corporate Coverage</span>
               </div>
-              <p className="mt-1 font-mono text-3xl font-bold text-gray-900">
+              <p className="mt-1 font-mono text-2xl font-bold text-gray-900 sm:text-3xl">
                 {Math.round((stats.activeClubs / stats.totalProjects) * 100)}%
               </p>
               <p className="mt-1 text-xs text-gray-500">Projects with active eco-clubs</p>
@@ -148,43 +148,43 @@ export default function ReportsPage() {
         </div>
 
         {/* Charts Grid */}
-        <div className="mb-8 grid gap-8 lg:grid-cols-2">
+        <div className="mb-5 grid gap-5 lg:grid-cols-2">
           <MonthlyProgressChart />
           <DistrictComparisonChart />
         </div>
 
-        <div className="mb-8 grid gap-8 lg:grid-cols-2">
+        <div className="mb-5 grid gap-5 lg:grid-cols-2">
           <ActivityTypeDistribution />
           <ResidentParticipationChart />
         </div>
 
         {/* Top Performing Projects */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-lg">
-              <Award className="h-5 w-5 text-blue-900" />
+        <Card className="mb-5">
+          <CardHeader className="pb-3">
+            <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+              <Award className="h-5 w-5 text-green-600" />
               Top Performing Eco-Clubs
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="mb-4 text-sm text-gray-600">
+            <p className="mb-3 text-xs text-gray-600 sm:text-sm">
               Residential communities recognized for outstanding eco-club activities as per Mantra Properties' monitoring criteria
             </p>
-            <div className="grid gap-3 md:grid-cols-5">
+            <div className="grid gap-2.5 md:grid-cols-5">
               {topProjects.map((project, index) => (
                 <div
                   key={project.id}
-                  className="flex flex-col items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 p-4 text-center"
+                  className="flex flex-col items-center gap-1.5 rounded-lg border border-gray-200 bg-gray-50 p-3 text-center"
                 >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 font-mono text-lg font-bold text-blue-900">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-green-100 font-mono text-base font-bold text-green-600">
                     {index + 1}
                   </div>
-                  <h4 className="text-sm font-medium leading-tight text-gray-900">
+                  <h4 className="text-xs font-medium leading-tight text-gray-900 sm:text-sm">
                     {project.name}
                   </h4>
                   <div className="flex items-center gap-1">
-                    <Star className="h-3.5 w-3.5 text-blue-900" />
-                    <span className="font-mono text-sm font-semibold text-gray-900">
+                    <Star className="h-3 w-3 text-green-600" />
+                    <span className="font-mono text-xs font-semibold text-gray-900 sm:text-sm">
                       {project.rating}
                     </span>
                   </div>
@@ -198,17 +198,17 @@ export default function ReportsPage() {
         </Card>
 
         {/* Impact Summary */}
-        <Card className="border-blue-900/20 bg-blue-900/5">
-          <CardContent className="py-8">
+        <Card className="border-green-600/20">
+          <CardContent className="py-5 sm:py-6">
             <div className="mx-auto max-w-2xl text-center">
-              <h3 className="font-mono text-xl font-bold text-gray-900">
+              <h3 className="font-mono text-lg font-bold text-gray-900 sm:text-xl">
                 Impact Summary
               </h3>
-              <p className="mt-3 leading-relaxed text-gray-600">
+              <p className="mt-2.5 text-sm leading-relaxed text-gray-600 sm:text-base">
                 Mantra Properties brings 17 years of distinguished real estate development with {stats.completedProjects} successful projects and {stats.ongoingProjects} ongoing developments across Pune. This platform enables real-time monitoring of {stats.activeClubs.toLocaleString()} active eco-clubs across {stats.totalProjects.toLocaleString()} residential projects, engaging {stats.totalParticipation.toLocaleString()} residents in environmental activities every month.
               </p>
-              <div className="mt-6 flex flex-wrap justify-center gap-3">
-                <Button className="gap-2 bg-blue-900 hover:bg-blue-950" asChild>
+              <div className="mt-4 flex flex-wrap justify-center gap-2.5">
+                <Button size="sm" className="gap-2 bg-green-600 hover:bg-green-700" asChild>
                   <a 
                     href="/downloads/implementation-guide.pdf" 
                     download="Mantra-Eco-Club-Full-Report.pdf"
@@ -217,7 +217,7 @@ export default function ReportsPage() {
                     Download Full Report
                   </a>
                 </Button>
-                <Button variant="outline" className="gap-2" asChild>
+                <Button variant="outline" size="sm" className="gap-2" asChild>
                   <a 
                     href="/downloads/mantra-eco-club-data.csv" 
                     download="Mantra-Eco-Club-Data-Export.csv"
